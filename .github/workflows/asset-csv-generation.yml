@@ -2,7 +2,7 @@
 # Asset CSV Generation Workflow
 #
 # This workflow manages the creation and validation of CSV files from RDF vocabularies
-# stored in the assets/controlled-vocabularies directory.
+# stored in the VocabolariControllati directory.
 #
 # Triggers:
 #  - Commits to assets/ directory
@@ -25,13 +25,13 @@ on:
     branches:
     - assets
     paths:
-    - 'assets/controlled-vocabularies/**'
+    - 'VocabolariControllati/**'
     - '.github/workflows/asset-csv-generation.yml'
   pull_request:
     branches:
     - assets
     paths:
-    - 'assets/controlled-vocabularies/**'
+    - 'VocabolariControllati/**'
     - '.github/workflows/asset-csv-generation.yml'
 env:
   CI: true
@@ -65,11 +65,11 @@ jobs:
         else
           true # XXX: uncomment
           # For push events, detect changed assets
-          # CHANGED_FILES=$(git diff --name-only HEAD~1..HEAD | grep '^assets/controlled-vocabularies/')
+          # CHANGED_FILES=$(git diff --name-only HEAD~1..HEAD | grep '^VocabolariControllati/')
           # ASSETS=$(echo "$CHANGED_FILES" | cut -d/ -f3 | sort -u | jq -R -s -c 'split("\n")[:-1] | map(select(length > 0))')
         fi
 
-        ASSETS=$(find assets/controlled-vocabularies  \
+        ASSETS=$(find VocabolariControllati  \
           -type f -name \*.ttl  -exec dirname {} \; | \
           sort -u | jq -R -s -c 'split("\n")[:-1]')
 
@@ -379,7 +379,7 @@ jobs:
           This PR contains the auto-generated CSV file for the `${{ matrix.asset }}` controlled vocabulary.
 
           ## Generated Files
-          - `assets/controlled-vocabularies/${{ matrix.asset }}/${{ steps.check-csv.outputs.csv_file }}`
+          - `VocabolariControllati/${{ matrix.asset }}/${{ steps.check-csv.outputs.csv_file }}`
 
           ## Validation
           The CSV has been generated from the RDF vocabulary and validated against the datapackage metadata.
