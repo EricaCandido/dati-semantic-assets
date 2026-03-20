@@ -13,7 +13,7 @@
     "@id": "@id"
 
   id:
-    "@id": skos:notation
+    "@id": dct:identifier   # ✅ FIX (era skos:notation)
     "@type": "xsd:string"
 
   label_it:
@@ -42,12 +42,8 @@
 url: {}
 id: {}
 notation: {}
-label_it:
-  "@language": ["it"]
-  "@value": {}
-label_en:
-  "@language": ["en"]
-  "@value": {}
+label_it: {}
+label_en: {}
 parent: {}
 level: {}
 scheme: {}
