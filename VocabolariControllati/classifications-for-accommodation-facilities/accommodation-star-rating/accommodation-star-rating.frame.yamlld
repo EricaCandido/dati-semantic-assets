@@ -8,6 +8,7 @@
 
 "@graph":
   "@embed": "@always"
+  "url": "@id"
   "skos:notation": {}
   "dct:identifier": {}
   "skos:prefLabel": {}
