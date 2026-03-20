@@ -1,4 +1,6 @@
 ---
+"@type": "skos:Concept"
+
 "@explicit": true
 "@embed": "@never"
 "@omitDefault": true
@@ -13,7 +15,7 @@
     "@id": "@id"
 
   id:
-    "@id": dct:identifier   # ✅ FIX (era skos:notation)
+    "@id": dct:identifier
     "@type": "xsd:string"
 
   label_it:
