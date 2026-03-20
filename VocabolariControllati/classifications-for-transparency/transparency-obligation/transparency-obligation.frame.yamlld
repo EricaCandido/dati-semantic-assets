@@ -12,7 +12,7 @@
   skos: "http://www.w3.org/2004/02/skos/core#"
   dct: "http://purl.org/dc/terms/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
-  to: "https://w3id.org/italia/controlled-vocabulary/transparency-obligation-organization/"
+  to: "https://w3id.org/italia/controlled-vocabulary/transparency-obligation/"
 
   url:
     "@id": "@id"
@@ -48,7 +48,7 @@
 "@type": "skos:Concept"
 
 scheme:
-  - "https://w3id.org/italia/controlled-vocabulary/transparency-obligation-organization"
+  - "https://w3id.org/italia/controlled-vocabulary/transparency-obligation"
 
 url: {}
 id: {}
