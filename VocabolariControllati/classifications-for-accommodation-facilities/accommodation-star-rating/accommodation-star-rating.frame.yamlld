@@ -1,17 +1,41 @@
+"@explicit": true
+"@embed": "@never"
+"@omitDefault": true
+
 "@context":
   skos: "http://www.w3.org/2004/02/skos/core#"
   dct: "http://purl.org/dc/terms/"
   accoapit: "https://w3id.org/italia/onto/ACCO/"
   clvapit: "https://w3id.org/italia/onto/CLV/"
 
-"@type": "skos:Concept"
+  url: "@id"
 
-"@graph":
-  "@embed": "@always"
-  "url": "@id"
-  "skos:notation": {}
-  "dct:identifier": {}
-  "skos:prefLabel": {}
-  "accoapit:accoStarRatingID": {}
-  "accoapit:accoStarRatingLabel": {}
-  "clvapit:hasRankOrder": {}
+  id:
+    "@id": dct:identifier
+
+  label_it:
+    "@id": skos:prefLabel
+    "@language": it
+
+  label_en:
+    "@id": skos:prefLabel
+    "@language": en
+
+  notation:
+    "@id": skos:notation
+
+  rank:
+    "@id": clvapit:hasRankOrder
+
+"@type": "accoapit:AccommodationStarRating"
+
+url: {}
+id: {}
+notation: {}
+label_it:
+  "@language": ["it"]
+  "@value": {}
+label_en:
+  "@language": ["en"]
+  "@value": {}
+rank: {}
