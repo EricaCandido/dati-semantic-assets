@@ -1,8 +1,4 @@
 ---
-#
-# Content-Type: application/ld+yaml; profile="http://www.w3.org/ns/json-ld#frame"
-#
-
 "@explicit": true
 "@embed": "@never"
 "@omitDefault": true
@@ -12,6 +8,7 @@
   skos: "http://www.w3.org/2004/02/skos/core#"
   dct: "http://purl.org/dc/terms/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
+  clvapit: "https://w3id.org/italia/onto/CLV/"
   to: "https://w3id.org/italia/controlled-vocabulary/transparency-obligation/"
 
   url:
@@ -42,8 +39,7 @@
     "@type": "@id"
 
   level:
-    "@id": skos:broader
-    "@type": "@id"
+    "@id": clvapit:hasRankOrder   
 
 "@type": "skos:Concept"
 
