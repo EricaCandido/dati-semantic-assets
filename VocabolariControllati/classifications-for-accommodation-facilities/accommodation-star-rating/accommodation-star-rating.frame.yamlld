@@ -1,6 +1,7 @@
 "@explicit": true
 "@embed": "@never"
 "@omitDefault": true
+"@requireAll": true
 
 "@context":
   skos: "http://www.w3.org/2004/02/skos/core#"
@@ -9,6 +10,7 @@
   clvapit: "https://w3id.org/italia/onto/CLV/"
 
   url: "@id"
+
   id: dct:identifier
   notation: skos:notation
 
