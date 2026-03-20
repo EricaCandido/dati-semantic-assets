@@ -1,0 +1,61 @@
+$schema: https://datapackage.org/profiles/2.0/datapackage.json
+created: '2017-10-20T00:00:00Z'
+description: Vocabolario controllato della classificazione a stelle per le strutture
+  ricettive
+id: agid:D.3
+keywords:
+- Accommodation Facility
+- Accommodation Facility Category
+- Categoria struttura ricettiva
+- Star rating
+- Stelle
+- Struttura ricettiva
+name: accommodation-star-rating
+resources:
+- dialect:
+    commentChar: '#'
+    delimiter: ','
+    doubleQuote: true
+    header: true
+    lineTerminator: "\r\n"
+    quoteChar: '"'
+    skipInitialSpace: true
+  encoding: utf-8
+  format: csv
+  mediatype: text/csv
+  name: accommodation-star-rating
+  path: changeme.csv
+  schema:
+    fields:
+    - name: url
+      type: string
+    - name: id
+      type: string
+    - name: notation
+      type: string
+    - name: label_en
+      type: string
+    - name: rank
+      type: string
+    x-jsonld-context:
+      accoapit: https://w3id.org/italia/onto/ACCO/
+      clvapit: https://w3id.org/italia/onto/CLV/
+      dct: http://purl.org/dc/terms/
+      id: dct:identifier
+      label_en:
+        '@id': skos:prefLabel
+        '@language': en
+      notation: skos:notation
+      rank:
+        '@id': clvapit:hasRankOrder
+      scheme:
+        '@id': skos:inScheme
+        '@type': '@id'
+      skos: http://www.w3.org/2004/02/skos/core#
+      url: '@id'
+  scheme: file
+  type: table
+sources:
+- path: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+title: Classificazione a stelle delle strutture ricettive
+version: '0.1'

@@ -1,0 +1,588 @@
+components:
+  schemas:
+    Item:
+      example:
+        id: '0'
+        label_en: 0 star
+        notation: '0'
+        rank: '1'
+        scheme:
+          dct:accrualPeriodicity:
+            url: http://publications.europa.eu/resource/authority/frequency/IRREG
+          dct:conformsTo:
+            dct:description: The Simple Knowledge Organization System (SKOS) is a
+              common data model for sharing and linking knowledge organization systems
+              via the Web
+            dct:title: Simple Knowledge Organization System - SKOS
+            id: SKOS
+            url: http://dati.gov.it/data/resource/Standard/SKOS
+          dct:creator:
+          - http://xmlns.com/foaf/0.1/name:
+            - {}
+            - {}
+            id: agid
+            url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+          - http://xmlns.com/foaf/0.1/name:
+            - {}
+            - {}
+            id: PCM
+            url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+          dct:description:
+          - {}
+          - {}
+          dct:issued: {}
+          dct:language:
+          - url: http://publications.europa.eu/resource/authority/language/ITA
+          - url: http://publications.europa.eu/resource/authority/language/ENG
+          dct:modified: {}
+          dct:publisher:
+            url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+          dct:rightsHolder:
+            url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+          dct:subject:
+          - url: http://eurovoc.europa.eu/251915
+          - url: http://eurovoc.europa.eu/251794
+          - url: http://eurovoc.europa.eu/251889
+          dct:title:
+          - {}
+          - {}
+          dct:type:
+            url: http://purl.org/adms/assettype/Taxonomy
+          http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+          http://www.w3.org/2000/01/rdf-schema#comment:
+          - {}
+          - {}
+          http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+          http://www.w3.org/2000/01/rdf-schema#label:
+          - {}
+          - {}
+          http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+          http://www.w3.org/ns/adms#representationTechnique:
+            url: http://purl.org/adms/representationtechnique/SKOS
+          http://www.w3.org/ns/dcat#contactPoint:
+            http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+            http://www.w3.org/2006/vcard/ns#hasEmail:
+              url: mailto:info@dati.gov.it
+            url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+          http://www.w3.org/ns/dcat#distribution:
+          - dct:description:
+            - {}
+            - {}
+            dct:format:
+              url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+            dct:license:
+              url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+            dct:title:
+            - {}
+            - {}
+            http://www.w3.org/ns/dcat#accessURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+            http://www.w3.org/ns/dcat#downloadURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+            url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+          - dct:description:
+            - {}
+            - {}
+            dct:format:
+              url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+            dct:license:
+              url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+            dct:title:
+            - {}
+            - {}
+            http://www.w3.org/ns/dcat#accessURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+            http://www.w3.org/ns/dcat#downloadURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+            url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+          - dct:description:
+            - {}
+            - {}
+            dct:format:
+              url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+            dct:license:
+              url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+            dct:title:
+            - {}
+            - {}
+            http://www.w3.org/ns/dcat#accessURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+            http://www.w3.org/ns/dcat#downloadURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+            url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+          - dct:description:
+            - {}
+            - {}
+            dct:format:
+              url: http://publications.europa.eu/resource/authority/file-type/CSV
+            dct:license:
+              url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+            dct:title:
+            - {}
+            - {}
+            http://www.w3.org/ns/dcat#accessURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+            http://www.w3.org/ns/dcat#downloadURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+            url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+          - dct:description:
+            - {}
+            - {}
+            dct:format:
+              url: http://publications.europa.eu/resource/authority/file-type/XLSX
+            dct:license:
+              url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+            dct:title:
+            - {}
+            - {}
+            http://www.w3.org/ns/dcat#accessURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+            http://www.w3.org/ns/dcat#downloadURL:
+              url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+            url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+          http://www.w3.org/ns/dcat#keyword:
+          - {}
+          - {}
+          - {}
+          - {}
+          - {}
+          - {}
+          http://www.w3.org/ns/dcat#theme:
+            url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+          https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+          id: agid:D.3
+          skos:hasTopConcept:
+          - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+          - accoapit:accoStarRatingID: '1'
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: '1'
+            label_en: 1 star
+            notation: '1'
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+          - accoapit:accoStarRatingID: '2'
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: '2'
+            label_en: 2 star
+            notation: '2'
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+          - accoapit:accoStarRatingID: '3'
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: '3'
+            label_en: 3 star
+            notation: '3'
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+          - accoapit:accoStarRatingID: 3S
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: 3S
+            label_en: 3 star superior
+            notation: 3S
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+          - accoapit:accoStarRatingID: '4'
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: '4'
+            label_en: 4 star
+            notation: '4'
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+          - accoapit:accoStarRatingID: 4S
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: 4S
+            label_en: 4 star superior
+            notation: 4S
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+          - accoapit:accoStarRatingID: '5'
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: '5'
+            label_en: 5 star
+            notation: '5'
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+          - accoapit:accoStarRatingID: 5L
+            accoapit:accoStarRatingLabel:
+            - {}
+            - {}
+            id: 5L
+            label_en: 5 star luxury
+            notation: 5L
+            rank: '1'
+            scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+            skos:prefLabel: {}
+            url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+          url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+        url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+      properties:
+        id:
+          minLength: 1
+          pattern: ^[A-Za-z0-9._-]+$
+          type: string
+        label_en:
+          maxLength: 500
+          minLength: 1
+          type: string
+        notation:
+          minLength: 1
+          pattern: ^[A-Za-z0-9._-]+$
+          type: string
+        rank:
+          type: string
+        scheme:
+          properties:
+            dct:accrualPeriodicity:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            dct:conformsTo:
+              properties:
+                dct:description:
+                  type: string
+                dct:title:
+                  type: string
+                id:
+                  type: string
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - dct:description
+              - dct:title
+              - id
+              - url
+              type: object
+            dct:creator:
+              items:
+                properties:
+                  http://xmlns.com/foaf/0.1/name:
+                    items:
+                      type: object
+                    type: array
+                  id:
+                    type: string
+                  url:
+                    format: uri-reference
+                    type: string
+                required:
+                - http://xmlns.com/foaf/0.1/name
+                - id
+                - url
+                type: object
+              type: array
+            dct:description:
+              items:
+                type: object
+              type: array
+            dct:issued:
+              type: object
+            dct:language:
+              items:
+                properties:
+                  url:
+                    format: uri-reference
+                    type: string
+                required:
+                - url
+                type: object
+              type: array
+            dct:modified:
+              type: object
+            dct:publisher:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            dct:rightsHolder:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            dct:subject:
+              items:
+                properties:
+                  url:
+                    format: uri-reference
+                    type: string
+                required:
+                - url
+                type: object
+              type: array
+            dct:title:
+              items:
+                type: object
+              type: array
+            dct:type:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels:
+              type: string
+            http://www.w3.org/2000/01/rdf-schema#comment:
+              items:
+                type: object
+              type: array
+            http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            http://www.w3.org/2000/01/rdf-schema#label:
+              items:
+                type: object
+              type: array
+            http://www.w3.org/2002/07/owl#versionInfo:
+              type: string
+            http://www.w3.org/ns/adms#representationTechnique:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            http://www.w3.org/ns/dcat#contactPoint:
+              properties:
+                http://www.w3.org/2006/vcard/ns#fn:
+                  type: string
+                http://www.w3.org/2006/vcard/ns#hasEmail:
+                  properties:
+                    url:
+                      format: uri-reference
+                      type: string
+                  required:
+                  - url
+                  type: object
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - http://www.w3.org/2006/vcard/ns#fn
+              - http://www.w3.org/2006/vcard/ns#hasEmail
+              - url
+              type: object
+            http://www.w3.org/ns/dcat#distribution:
+              items:
+                properties:
+                  dct:description:
+                    items:
+                      type: object
+                    type: array
+                  dct:format:
+                    properties:
+                      url:
+                        format: uri-reference
+                        type: string
+                    required:
+                    - url
+                    type: object
+                  dct:license:
+                    properties:
+                      url:
+                        format: uri-reference
+                        type: string
+                    required:
+                    - url
+                    type: object
+                  dct:title:
+                    items:
+                      type: object
+                    type: array
+                  http://www.w3.org/ns/dcat#accessURL:
+                    properties:
+                      url:
+                        format: uri-reference
+                        type: string
+                    required:
+                    - url
+                    type: object
+                  http://www.w3.org/ns/dcat#downloadURL:
+                    properties:
+                      url:
+                        format: uri-reference
+                        type: string
+                    required:
+                    - url
+                    type: object
+                  url:
+                    format: uri-reference
+                    type: string
+                required:
+                - dct:description
+                - dct:format
+                - dct:license
+                - dct:title
+                - http://www.w3.org/ns/dcat#accessURL
+                - http://www.w3.org/ns/dcat#downloadURL
+                - url
+                type: object
+              type: array
+            http://www.w3.org/ns/dcat#keyword:
+              items:
+                type: object
+              type: array
+            http://www.w3.org/ns/dcat#theme:
+              properties:
+                url:
+                  format: uri-reference
+                  type: string
+              required:
+              - url
+              type: object
+            https://w3id.org/italia/onto/NDC/keyConcept:
+              type: string
+            id:
+              type: string
+            skos:hasTopConcept:
+              items:
+                properties:
+                  accoapit:accoStarRatingID:
+                    type: string
+                  accoapit:accoStarRatingLabel:
+                    items:
+                      type: object
+                    type: array
+                  id:
+                    type: string
+                  label_en:
+                    type: string
+                  notation:
+                    type: string
+                  rank:
+                    type: string
+                  scheme:
+                    type: string
+                  skos:prefLabel:
+                    type: object
+                  url:
+                    format: uri-reference
+                    type: string
+                required:
+                - url
+                type: object
+              type: array
+            url:
+              format: uri-reference
+              type: string
+          required:
+          - dct:accrualPeriodicity
+          - dct:conformsTo
+          - dct:creator
+          - dct:description
+          - dct:issued
+          - dct:language
+          - dct:modified
+          - dct:publisher
+          - dct:rightsHolder
+          - dct:subject
+          - dct:title
+          - dct:type
+          - http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels
+          - http://www.w3.org/2000/01/rdf-schema#comment
+          - http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+          - http://www.w3.org/2000/01/rdf-schema#label
+          - http://www.w3.org/2002/07/owl#versionInfo
+          - http://www.w3.org/ns/adms#representationTechnique
+          - http://www.w3.org/ns/dcat#contactPoint
+          - http://www.w3.org/ns/dcat#distribution
+          - http://www.w3.org/ns/dcat#keyword
+          - http://www.w3.org/ns/dcat#theme
+          - https://w3id.org/italia/onto/NDC/keyConcept
+          - id
+          - skos:hasTopConcept
+          - url
+          type: object
+        url:
+          format: uri-reference
+          type: string
+      required:
+      - id
+      - label_en
+      - notation
+      - rank
+      - scheme
+      - url
+      type: object
+      x-jsonld-context:
+        accoapit: https://w3id.org/italia/onto/ACCO/
+        clvapit: https://w3id.org/italia/onto/CLV/
+        dct: http://purl.org/dc/terms/
+        id: dct:identifier
+        label_en:
+          '@id': skos:prefLabel
+          '@language': en
+        notation: skos:notation
+        rank:
+          '@id': clvapit:hasRankOrder
+        scheme:
+          '@id': skos:inScheme
+          '@type': '@id'
+        skos: http://www.w3.org/2004/02/skos/core#
+        url: '@id'
+      x-jsonld-type: accoapit:AccommodationStarRating
+      x-validation:
+        error_count: 0
+        errors: []
+        valid: true
+info:
+  contact:
+    email: fake@example.com
+    name: Fake Name
+    url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+  description: Vocabolario controllato della classificazione a stelle per le strutture
+    ricettive
+  title: Classificazione a stelle delle strutture ricettive
+  version: '0.1'
+  x-agencyId: agid
+  x-keyConcept: accommodation-star-rating
+  x-summary: ''
+openapi: 3.0.0
+paths: {}
+servers: []
