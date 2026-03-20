@@ -9,9 +9,8 @@
   clvapit: "https://w3id.org/italia/onto/CLV/"
 
   url: "@id"
-
-  id:
-    "@id": dct:identifier
+  id: dct:identifier
+  notation: skos:notation
 
   label_it:
     "@id": skos:prefLabel
@@ -20,9 +19,6 @@
   label_en:
     "@id": skos:prefLabel
     "@language": en
-
-  notation:
-    "@id": skos:notation
 
   rank:
     "@id": clvapit:hasRankOrder
