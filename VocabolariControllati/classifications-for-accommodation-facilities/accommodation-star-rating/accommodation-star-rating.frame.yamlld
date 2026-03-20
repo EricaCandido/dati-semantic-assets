@@ -12,10 +12,6 @@
   id: dct:identifier
   notation: skos:notation
 
-  label_it:
-    "@id": skos:prefLabel
-    "@language": it
-
   label_en:
     "@id": skos:prefLabel
     "@language": en
@@ -23,14 +19,16 @@
   rank:
     "@id": clvapit:hasRankOrder
 
-"@type": "accoapit:AccommodationStarRating"
+  scheme:
+    "@id": skos:inScheme
+    "@type": "@id"
+
+scheme:
+  - "https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating"
 
 url: {}
 id: {}
 notation: {}
-label_it:
-  "@language": ["it"]
-  "@value": {}
 label_en:
   "@language": ["en"]
   "@value": {}
