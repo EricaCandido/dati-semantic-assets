@@ -2,14 +2,12 @@
 "@explicit": true
 "@embed": "@never"
 "@omitDefault": true
-"@requireAll": true
 
 "@context":
   skos: "http://www.w3.org/2004/02/skos/core#"
   dct: "http://purl.org/dc/terms/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
   clvapit: "https://w3id.org/italia/onto/CLV/"
-  to: "https://w3id.org/italia/controlled-vocabulary/transparency-obligation/"
 
   url:
     "@id": "@id"
@@ -32,19 +30,14 @@
   parent:
     "@id": skos:broader
     "@type": "@id"
-    "@container": "@set"
+
+  level:
+    "@id": clvapit:hasRankOrder
+    "@type": "xsd:integer"
 
   scheme:
     "@id": skos:inScheme
     "@type": "@id"
-
-  level:
-    "@id": clvapit:hasRankOrder   
-
-"@type": "skos:Concept"
-
-scheme:
-  - "https://w3id.org/italia/controlled-vocabulary/transparency-obligation"
 
 url: {}
 id: {}
@@ -57,3 +50,4 @@ label_en:
   "@value": {}
 parent: {}
 level: {}
+scheme: {}
