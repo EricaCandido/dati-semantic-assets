@@ -39,6 +39,7 @@ env:
   SOURCE_REF: ${{ github.event.pull_request.head.sha || github.sha
     }}
   CHECKOUT_REF: assets
+  VOCABULARY_ROOT_DIR: 'VocabolariControllati'
 jobs:
   # Detect which assets changed in this push
   detect-changes:
