@@ -49,9 +49,11 @@ jobs:
     outputs:
       assets: ${{ steps.detect.outputs.assets }}
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+    - uses: actions/checkout@v4
       with:
-        persist-credentials: false
+        repository: ${{ github.repository }}
+        ref: ${{ env.CHECKOUT_REF }}
+        persist-credentials: true
         fetch-depth: 0
     - name: Detect changed assets
       id: detect
@@ -96,10 +98,12 @@ jobs:
         asset: >-
           ${{ fromJson(needs.detect-changes.outputs.assets) }}
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+    - uses: actions/checkout@v4
       with:
-        persist-credentials: true
+        repository: ${{ github.repository }}
         ref: ${{ env.CHECKOUT_REF }}
+        persist-credentials: true
+        fetch-depth: 0
     - name: Set up Python
       uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
       with:
@@ -209,10 +213,12 @@ jobs:
         asset: >-
           ${{ fromJson(needs.detect-changes.outputs.assets) }}
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+    - uses: actions/checkout@v4
       with:
-        persist-credentials: true
+        repository: ${{ github.repository }}
         ref: ${{ env.CHECKOUT_REF }}
+        persist-credentials: true
+        fetch-depth: 0
     - name: Set up Python
       uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
       with:
