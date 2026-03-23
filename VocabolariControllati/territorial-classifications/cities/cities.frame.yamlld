@@ -1,20 +1,24 @@
-"@explicit": true
+"@explicit": false
 "@embed": "@never"
 "@omitDefault": true
-"@requireAll": true
+"@requireAll": false
 
 "@context":
   skos: "http://www.w3.org/2004/02/skos/core#"
-  dct: "http://purl.org/dc/terms/"
   clvapit: "https://w3id.org/italia/onto/CLV/"
-  tiapit: "https://w3id.org/italia/onto/TI/"
+  l0: "https://w3id.org/italia/onto/l0/"
+  owl: "http://www.w3.org/2002/07/owl#"
 
-  url: "@id"               
-  id: dct:identifier
-  notation: skos:notation
+  url: "@id"
+
+  id: skos:notation
 
   label_it:
     "@id": skos:prefLabel
+    "@language": it
+
+  name_it:
+    "@id": l0:name
     "@language": it
 
   broader:
@@ -25,15 +29,23 @@
     "@id": skos:inScheme
     "@type": "@id"
 
+  same_as:
+    "@id": owl:sameAs
+    "@type": "@id"
+
 "@type": "clvapit:City"
 
 scheme:
   - "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities"
 
-url: {}                     
+url: {}
 id: {}
-notation: {}
 label_it:
   "@language": ["it"]
   "@value": {}
+name_it:
+  "@language": ["it"]
+  "@value": {}
 broader: {}
+scheme: {}
+same_as: {}
