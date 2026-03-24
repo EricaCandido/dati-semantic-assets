@@ -89,6 +89,7 @@ jobs:
     if: needs.detect-changes.outputs.assets != '[]' && needs.detect-changes.outputs.assets
       != ''
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     permissions:
       contents: write
       actions: read
@@ -184,6 +185,9 @@ jobs:
       run: |
         ASSET_NAME=$(ls *.ttl 2>/dev/null | sed 's/\.ttl$//')
 
+        ( while true; do echo "[keepalive] JSON-LD still running..."; sleep 60; done ) &
+        KEEPALIVE_PID=$!
+
         /usr/local/bin/schema_gov_it_tools.bin openapi create \
         --ttl "${ASSET_NAME}.ttl" \
         --frame "${ASSET_NAME}.frame.yamlld" \
@@ -218,6 +222,7 @@ jobs:
     needs: [detect-changes]
     # if: false  # Temporarily disabled
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     permissions:
       contents: write
       pull-requests: write
@@ -246,42 +251,18 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         set -e
-        REPO="par-tec/dati-semantic-csv-apis"
-        echo "Fetching latest workflow run..."
-        
-        RUN_ID=$(curl -s \
-          -H "Authorization: Bearer ${GH_TOKEN}" \
-          https://api.github.com/repos/${REPO}/actions/runs \
-          | jq -r '
-            .workflow_runs
-            | map(select(.name=="Test"))
-            | first
-            | .id
-          ')
 
-        echo "Latest run ID: ${RUN_ID}"
+        echo "Fetching artifact URL via Python script..."
+        ARTIFACT_URL=$(python3 .github/scripts/fetch_artifact.py)
 
-        if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
-          echo "No run found for workflow Test"
-          exit 1
-        fi        
-
-        echo "Fetching artifacts..."
-
-        ARTIFACT_URL=$(curl -s \
-          -H "Authorization: Bearer ${GH_TOKEN}" \
-          https://api.github.com/repos/${REPO}/actions/runs/${RUN_ID}/artifacts \
-          | jq -r '.artifacts[]
-            | select(.name=="cli-binary")
-            | select(.expired==false)
-            | .archive_download_url')
-
-        echo "Artifact URL: ${ARTIFACT_URL}"
+        echo "Artifact URL: $ARTIFACT_URL"
 
         if [ -z "$ARTIFACT_URL" ] || [ "$ARTIFACT_URL" = "null" ]; then
-          echo "No artifact found in run ${RUN_ID}"
+          echo "No valid artifact found"
           exit 1
         fi
+
+        echo "Downloading artifact..."
         curl -L \
           -H "Authorization: Bearer ${GH_TOKEN}" \
           "${ARTIFACT_URL}" \
@@ -291,7 +272,7 @@ jobs:
           echo "Artifact download failed"
           exit 1
         fi
-        
+
         unzip /tmp/artifact.zip -d /usr/local/bin/
         chmod +x /usr/local/bin/schema_gov_it_tools.bin
         /usr/local/bin/schema_gov_it_tools.bin --version
@@ -324,6 +305,9 @@ jobs:
         ${{ matrix.asset }}
       run: |
         ASSET_NAME=$(ls *.ttl 2>/dev/null | sed 's/\.ttl$//')
+        
+        ( while true; do echo "[keepalive] CSV still running..."; sleep 120; done ) &
+        KEEPALIVE_PID=$!
 
         # Generate CSV from JSON-LD and datapackage
         /usr/local/bin/schema_gov_it_tools.bin \
