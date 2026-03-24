@@ -177,7 +177,7 @@ jobs:
       env:
         MATRIX_ASSET: ${{ matrix.asset }}
     - name: Create OAS metadata
-      timeout-minutes: 30
+      timeout-minutes: 60
       if: steps.check-frame.outputs.exists == 'true'
       working-directory: >-
         ${{ matrix.asset }}
@@ -318,7 +318,7 @@ jobs:
           echo "frame file not found, skipping CSV generation"
         fi
     - name: Generate and validate CSV
-      timeout-minutes: 30
+      timeout-minutes: 60
       if: steps.check-datapackage.outputs.exists == 'true' && steps.check-frame.outputs.exists == 'true' && !contains(matrix.asset, 'theme-subtheme-mapping')
       working-directory: >-
         ${{ matrix.asset }}
