@@ -1,7 +1,7 @@
-"@explicit": false
+"@explicit": true
 "@embed": "@never"
 "@omitDefault": true
-"@requireAll": false
+"@requireAll": true
 
 "@context":
   skos: "http://www.w3.org/2004/02/skos/core#"
@@ -9,7 +9,7 @@
   l0: "https://w3id.org/italia/onto/l0/"
   owl: "http://www.w3.org/2002/07/owl#"
 
-  url: "@id"
+  uri: "@id"
 
   id: skos:notation
 
@@ -21,13 +21,15 @@
     "@id": l0:name
     "@language": it
 
-  broader:
-    "@id": skos:broader
-    "@type": "@id"
+  #broader:
+  #  "@id": skos:broader
+  #  "@type": "@id"
 
-  scheme:
+  vocab:
     "@id": skos:inScheme
-    "@type": "@id"
+    "@container": "@set"
+    "@context":
+      uri: "@id"
 
   same_as:
     "@id": owl:sameAs
@@ -35,10 +37,10 @@
 
 "@type": "clvapit:City"
 
-scheme:
-  - "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities"
+vocab:
+  - "uri": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities"
 
-url: {}
+uri: {}
 id: {}
 label_it:
   "@language": ["it"]
@@ -46,6 +48,5 @@ label_it:
 name_it:
   "@language": ["it"]
   "@value": {}
-broader: {}
-scheme: {}
+#broader: {}
 same_as: {}
