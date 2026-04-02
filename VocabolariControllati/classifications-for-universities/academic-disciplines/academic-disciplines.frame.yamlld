@@ -32,17 +32,23 @@
 
   broader:
     "@id": skos:broader
-    "@type": "@id"
+    "@container": "@set"
+    "@context":
+      uri: "@id"
 
   level:
     "@id": clvapit:hasRankOrder
 
   scheme:
     "@id": skos:inScheme
-    "@type": "@id"
+    "@container": "@set"
+    "@context":
+      uri: "@id"
 
 scheme:
-  - "https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines"
+  - uri: "https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines"
+    "@explicit": true
+    "@embed": "@never"
 
 uri: {}
 id: {}
@@ -50,6 +56,12 @@ label_it: {}
 label_en: {}
 definition_it: {}
 definition_en: {}
-broader: {}
 level: {}
-scheme: {}
+
+broader:
+  - uri: {}
+    id: {}
+    "@embed": "@always"
+    "@explicit": true
+    "@default": "@null"
+    "@requireAll": false

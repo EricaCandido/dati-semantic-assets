@@ -2,157 +2,34 @@ components:
   schemas:
     Item:
       example:
-        broader:
-          definition_en: Area CUN
-          definition_it: Area CUN
-          id: Area 01
-          label_en: Mathematics and informatics
-          label_it: Scienze matematiche e informatiche
-          level: '1'
-          scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
-          skos:broadMatch:
-            uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-her/fields-of-research-development/1
-          skos:narrower:
-          - uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-A
-          - uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-B
-          skos:topConceptOf:
-            uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
-          uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/Area-01
-        definition_en: Group of academic recruitment fields
-        definition_it: Macrosettore Concorsuale
-        id: 01/A
-        label_en: Mathematics
-        label_it: Matematica
-        level: '2'
-        scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
-        uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-A
+        broader: []
+        definition_en: Area CUN
+        definition_it: Area CUN
+        id: Area 01
+        label_en: Mathematics and informatics
+        label_it: Scienze matematiche e informatiche
+        level: '1'
+        scheme:
+        - uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
+        uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/Area-01
       properties:
         broader:
-          anyOf:
-          - type: string
-          - properties:
-              broader:
+          items:
+            properties:
+              id:
                 anyOf:
                 - type: string
-                - properties:
-                    broader:
-                      anyOf:
-                      - type: string
-                      - properties:
-                          definition_en:
-                            type: string
-                          definition_it:
-                            type: string
-                          id:
-                            type: string
-                          label_en:
-                            type: string
-                          label_it:
-                            type: string
-                          level:
-                            type: string
-                          scheme:
-                            type: string
-                          uri:
-                            type: string
-                        required:
-                        - definition_en
-                        - definition_it
-                        - id
-                        - label_en
-                        - label_it
-                        - level
-                        - scheme
-                        - uri
-                        type: object
-                    definition_en:
-                      type: string
-                    definition_it:
-                      type: string
-                    id:
-                      type: string
-                    label_en:
-                      type: string
-                    label_it:
-                      type: string
-                    level:
-                      type: string
-                    scheme:
-                      type: string
-                    uri:
-                      type: string
-                  required:
-                  - definition_en
-                  - definition_it
-                  - id
-                  - label_en
-                  - label_it
-                  - level
-                  - scheme
-                  - uri
-                  type: object
-              definition_en:
-                type: string
-              definition_it:
-                type: string
-              id:
-                type: string
-              label_en:
-                type: string
-              label_it:
-                type: string
-              level:
-                type: string
-              scheme:
-                type: string
+                - type: "null"
               uri:
+                format: uri-reference
                 type: string
             required:
-            - definition_en
-            - definition_it
             - id
-            - label_en
-            - label_it
-            - level
-            - scheme
             - uri
             type: object
-          - items:
-              anyOf:
-              - type: string
-              - properties:
-                  broader:
-                    type: string
-                  definition_en:
-                    type: string
-                  definition_it:
-                    type: string
-                  id:
-                    type: string
-                  label_en:
-                    type: string
-                  label_it:
-                    type: string
-                  level:
-                    type: string
-                  scheme:
-                    type: string
-                  uri:
-                    type: string
-                required:
-                - broader
-                - definition_en
-                - definition_it
-                - id
-                - label_en
-                - label_it
-                - level
-                - scheme
-                - uri
-                type: object
-            maxItems: 100
-            minItems: 0
-            type: array
+          maxItems: 100
+          minItems: 0
+          type: array
         definition_en:
           minLength: 1
           type: string
@@ -161,7 +38,6 @@ components:
           type: string
         id:
           minLength: 1
-          pattern: ^[A-Za-z0-9._-]+$
           type: string
         label_en:
           maxLength: 500
@@ -174,7 +50,17 @@ components:
         level:
           type: string
         scheme:
-          type: string
+          items:
+            properties:
+              uri:
+                format: uri-reference
+                type: string
+            required:
+            - uri
+            type: object
+          maxItems: 100
+          minItems: 0
+          type: array
         uri:
           format: uri-reference
           type: string
@@ -191,8 +77,10 @@ components:
       type: object
       x-jsonld-context:
         broader:
+          '@container': '@set'
+          '@context':
+            uri: '@id'
           '@id': skos:broader
-          '@type': '@id'
         clvapit: https://w3id.org/italia/onto/CLV/
         definition_en:
           '@id': skos:definition
@@ -211,8 +99,10 @@ components:
         level:
           '@id': clvapit:hasRankOrder
         scheme:
+          '@container': '@set'
+          '@context':
+            uri: '@id'
           '@id': skos:inScheme
-          '@type': '@id'
         skos: http://www.w3.org/2004/02/skos/core#
         uri: '@id'
       x-jsonld-type: skos:Concept
@@ -220,52 +110,52 @@ components:
         error_count: 11
         errors:
         - index: 0
-          message: '''01/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 01'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 1
-          message: '''01/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 02'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 2
-          message: '''02/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 03'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 3
-          message: '''02/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 04'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 4
-          message: '''02/C'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 05'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 5
-          message: '''02/D'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 06'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 6
-          message: '''03/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 07'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 7
-          message: '''03/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 08'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 8
-          message: '''03/C'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 09'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
         - index: 9
-          message: '''03/D'' does not match ''^[A-Za-z0-9._-]+$'''
+          message: '''Area 10'' does not match ''^[A-Za-z0-9._-]+$'''
           path:
           - id
           validator: pattern
