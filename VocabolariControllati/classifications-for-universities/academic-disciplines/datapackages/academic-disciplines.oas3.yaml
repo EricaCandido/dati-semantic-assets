@@ -1,0 +1,301 @@
+components:
+  schemas:
+    Item:
+      example:
+        broader:
+          definition_en: Area CUN
+          definition_it: Area CUN
+          id: Area 01
+          label_en: Mathematics and informatics
+          label_it: Scienze matematiche e informatiche
+          level: '1'
+          scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
+          skos:broadMatch:
+            uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-her/fields-of-research-development/1
+          skos:narrower:
+          - uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-A
+          - uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-B
+          skos:topConceptOf:
+            uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
+          uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/Area-01
+        definition_en: Group of academic recruitment fields
+        definition_it: Macrosettore Concorsuale
+        id: 01/A
+        label_en: Mathematics
+        label_it: Matematica
+        level: '2'
+        scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines
+        uri: https://w3id.org/italia/controlled-vocabulary/classifications-for-universities/academic-disciplines/MSC-01-A
+      properties:
+        broader:
+          anyOf:
+          - type: string
+          - properties:
+              broader:
+                anyOf:
+                - type: string
+                - properties:
+                    broader:
+                      anyOf:
+                      - type: string
+                      - properties:
+                          definition_en:
+                            type: string
+                          definition_it:
+                            type: string
+                          id:
+                            type: string
+                          label_en:
+                            type: string
+                          label_it:
+                            type: string
+                          level:
+                            type: string
+                          scheme:
+                            type: string
+                          uri:
+                            type: string
+                        required:
+                        - definition_en
+                        - definition_it
+                        - id
+                        - label_en
+                        - label_it
+                        - level
+                        - scheme
+                        - uri
+                        type: object
+                    definition_en:
+                      type: string
+                    definition_it:
+                      type: string
+                    id:
+                      type: string
+                    label_en:
+                      type: string
+                    label_it:
+                      type: string
+                    level:
+                      type: string
+                    scheme:
+                      type: string
+                    uri:
+                      type: string
+                  required:
+                  - definition_en
+                  - definition_it
+                  - id
+                  - label_en
+                  - label_it
+                  - level
+                  - scheme
+                  - uri
+                  type: object
+              definition_en:
+                type: string
+              definition_it:
+                type: string
+              id:
+                type: string
+              label_en:
+                type: string
+              label_it:
+                type: string
+              level:
+                type: string
+              scheme:
+                type: string
+              uri:
+                type: string
+            required:
+            - definition_en
+            - definition_it
+            - id
+            - label_en
+            - label_it
+            - level
+            - scheme
+            - uri
+            type: object
+          - items:
+              anyOf:
+              - type: string
+              - properties:
+                  broader:
+                    type: string
+                  definition_en:
+                    type: string
+                  definition_it:
+                    type: string
+                  id:
+                    type: string
+                  label_en:
+                    type: string
+                  label_it:
+                    type: string
+                  level:
+                    type: string
+                  scheme:
+                    type: string
+                  uri:
+                    type: string
+                required:
+                - broader
+                - definition_en
+                - definition_it
+                - id
+                - label_en
+                - label_it
+                - level
+                - scheme
+                - uri
+                type: object
+            maxItems: 100
+            minItems: 0
+            type: array
+        definition_en:
+          minLength: 1
+          type: string
+        definition_it:
+          minLength: 1
+          type: string
+        id:
+          minLength: 1
+          pattern: ^[A-Za-z0-9._-]+$
+          type: string
+        label_en:
+          maxLength: 500
+          minLength: 1
+          type: string
+        label_it:
+          maxLength: 500
+          minLength: 1
+          type: string
+        level:
+          type: string
+        scheme:
+          type: string
+        uri:
+          format: uri-reference
+          type: string
+      required:
+      - broader
+      - definition_en
+      - definition_it
+      - id
+      - label_en
+      - label_it
+      - level
+      - scheme
+      - uri
+      type: object
+      x-jsonld-context:
+        broader:
+          '@id': skos:broader
+          '@type': '@id'
+        clvapit: https://w3id.org/italia/onto/CLV/
+        definition_en:
+          '@id': skos:definition
+          '@language': en
+        definition_it:
+          '@id': skos:definition
+          '@language': it
+        herapit: https://w3id.org/italia/onto/HER/
+        id: skos:notation
+        label_en:
+          '@id': skos:prefLabel
+          '@language': en
+        label_it:
+          '@id': skos:prefLabel
+          '@language': it
+        level:
+          '@id': clvapit:hasRankOrder
+        scheme:
+          '@id': skos:inScheme
+          '@type': '@id'
+        skos: http://www.w3.org/2004/02/skos/core#
+        uri: '@id'
+      x-jsonld-type: skos:Concept
+      x-validation:
+        error_count: 11
+        errors:
+        - index: 0
+          message: '''01/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 1
+          message: '''01/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 2
+          message: '''02/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 3
+          message: '''02/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 4
+          message: '''02/C'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 5
+          message: '''02/D'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 6
+          message: '''03/A'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 7
+          message: '''03/B'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 8
+          message: '''03/C'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        - index: 9
+          message: '''03/D'' does not match ''^[A-Za-z0-9._-]+$'''
+          path:
+          - id
+          validator: pattern
+        valid: false
+info:
+  contact:
+    email: info@dati.gov.it
+    name: banche dati e open data
+    url: https://w3id.org/italia/data/public-organization/m_pi
+  description: I settori scientifico-disciplinari (S.S.D.) sono una distinzione disciplinare
+    utilizzata in Italia per organizzare l'insegnamento superiore. I settori sono
+    introdotti dalla legge n. 341 del 19 novembre 1990, anche se un raggruppamento
+    per aree tematiche esisteva già dal 1973. I settori attuali sono stabiliti dal
+    decreto ministeriale n. 855 del 30 ottobre 2015 e sono in vigore dal 20 novembre
+    2015, data di pubblicazione sulla Gazzetta Ufficiale. - la versione Linked Open
+    Data del vocabolario dei settori scientifico-disciplinari delle università italiane
+    è stata creata da Giovanni Pirrotta (@gpirrotta), attivista della comunità Open
+    Data Sicilia. Tale versione è stata poi integrata con una serie di allineamenti
+    anche ad altri vocabolari controllati del settore Alta formazione e ricerca, come
+    per esempio i vocabolari ERC panel del framework programme europeo Horizon 2020
+    e 'fields of research and development (FORD)'. Si noti che gli allineamenti al
+    vocabolario ERC panel non sono ufficiali ma elaborati nel corso degli anni nel
+    contesto del progetto Toscana Open Research dai quali i vocabolari su Alta formazione
+    e ricerca derivano.
+  title: Vocabolario delle Aree CUN, dei Macrosettori, dei Settori Concorsuali e dei
+    Settori Scientifico-Disciplinari delle Università Italiane
+  version: 0.3 - incluso mapping con vocabolario ERC Panel
+  x-agencyId: m_pi
+  x-keyConcept: academic-disciplines
+  x-summary: ''
+openapi: 3.0.0
+paths: {}
+servers: []
