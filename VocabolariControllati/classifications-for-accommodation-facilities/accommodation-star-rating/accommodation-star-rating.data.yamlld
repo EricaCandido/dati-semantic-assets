@@ -1,0 +1,3529 @@
+'@context':
+  accoapit: https://w3id.org/italia/onto/ACCO/
+  clvapit: https://w3id.org/italia/onto/CLV/
+  dct: http://purl.org/dc/terms/
+  id: dct:identifier
+  label_en:
+    '@id': skos:prefLabel
+    '@language': en
+  notation: skos:notation
+  rank:
+    '@id': clvapit:hasRankOrder
+  scheme:
+    '@id': skos:inScheme
+    '@type': '@id'
+  skos: http://www.w3.org/2004/02/skos/core#
+  url: '@id'
+'@graph':
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '0'
+  label_en: 0 star
+  notation: '0'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '1'
+  label_en: 1 star
+  notation: '1'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '2'
+  label_en: 2 star
+  notation: '2'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '3'
+  label_en: 3 star
+  notation: '3'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: 3S
+  label_en: 3 star superior
+  notation: 3S
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '4'
+  label_en: 4 star
+  notation: '4'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: 4S
+  label_en: 4 star superior
+  notation: 4S
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: '5'
+  label_en: 5 star
+  notation: '5'
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 5L
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle lusso
+      - '@language': en
+        '@value': 5 star luxury
+      id: 5L
+      label_en: 5 star luxury
+      notation: 5L
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle lusso
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+- '@type':
+  - skos:Concept
+  - accoapit:AccommodationStarRating
+  id: 5L
+  label_en: 5 star luxury
+  notation: 5L
+  rank: '1'
+  scheme:
+    '@type':
+    - skos:ConceptScheme
+    - http://www.w3.org/ns/adms#Asset
+    - http://dati.gov.it/onto/dcatapit#Dataset
+    dct:accrualPeriodicity:
+      url: http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct:conformsTo:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Standard
+      - dct:Standard
+      dct:description: The Simple Knowledge Organization System (SKOS) is a common
+        data model for sharing and linking knowledge organization systems via the
+        Web
+      dct:title: Simple Knowledge Organization System - SKOS
+      id: SKOS
+      url: http://dati.gov.it/data/resource/Standard/SKOS
+    dct:creator:
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Agenzia per l'Italia Digitale
+      - '@language': en
+        '@value': Italian Digital Agency
+      id: agid
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    - '@type':
+      - http://dati.gov.it/onto/dcatapit#Agent
+      - http://xmlns.com/foaf/0.1/Agent
+      http://xmlns.com/foaf/0.1/name:
+      - '@language': it
+        '@value': Team per la Trasformazione Digitale
+      - '@language': en
+        '@value': Digital Transformation Team
+      id: PCM
+      url: http://dati.gov.it/data/resource/Amministrazione/td_PCM
+    dct:description:
+    - '@language': en
+      '@value': Controlled Vocabulary on the classification of the star ratings for
+        accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato della classificazione a stelle per le strutture
+        ricettive
+    dct:issued:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2017-10-20'
+    dct:language:
+    - url: http://publications.europa.eu/resource/authority/language/ITA
+    - url: http://publications.europa.eu/resource/authority/language/ENG
+    dct:modified:
+      '@type': http://www.w3.org/2001/XMLSchema#date
+      '@value': '2018-02-11'
+    dct:publisher:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:rightsHolder:
+      url: http://spcdata.digitpa.gov.it/browse/page/Amministrazione/agid
+    dct:subject:
+    - url: http://eurovoc.europa.eu/251915
+    - url: http://eurovoc.europa.eu/251794
+    - url: http://eurovoc.europa.eu/251889
+    dct:title:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    dct:type:
+      url: http://purl.org/adms/assettype/Taxonomy
+    http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels: '1'
+    http://www.w3.org/2000/01/rdf-schema#comment:
+    - '@language': en
+      '@value': Classification of the star ratings for the accommodations.
+    - '@language': it
+      '@value': Vocabolario controllato sulla classificazione a stelle per le strutture
+        ricettive
+    http://www.w3.org/2000/01/rdf-schema#isDefinedBy:
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+    http://www.w3.org/2000/01/rdf-schema#label:
+    - '@language': en
+      '@value': Accommodation Star Rating Classification
+    - '@language': it
+      '@value': Classificazione a stelle delle strutture ricettive
+    http://www.w3.org/2002/07/owl#versionInfo: '0.1'
+    http://www.w3.org/ns/adms#representationTechnique:
+      url: http://purl.org/adms/representationtechnique/SKOS
+    http://www.w3.org/ns/dcat#contactPoint:
+      '@type':
+      - http://dati.gov.it/onto/dcatapit#Organization
+      - http://www.w3.org/2006/vcard/ns#Organization
+      - http://www.w3.org/2006/vcard/ns#Kind
+      http://www.w3.org/2006/vcard/ns#fn: banche dati e open data
+      http://www.w3.org/2006/vcard/ns#hasEmail:
+        url: mailto:info@dati.gov.it
+      url: http://dati.gov.it/data/resource/ContactPoint/voc_AgID
+    http://www.w3.org/ns/dcat#distribution:
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/Turtle del dataset Linked Open Data
+          del vocabolario controllato sulla classificazione a stelle delle strutture
+          ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/turtle of the Linked Open Dataset
+          of the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/Turtle per classificazione a stelle strutture
+          ricettive '
+      - '@language': en
+        '@value': RDF/Turtle distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.ttl
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_Turtle
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione RDF/XML del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in RDF/XML of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione RDF/XML per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': RDF/XML distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.rdf
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_RDF_XML
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione JSON_LD del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in JSON_LD of the Linked Open Dataset of
+          the controlled vocabulary related to the stars rating for accommodation
+          facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione JSON_LD per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': JSON_LD distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.jsonld
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_JSON_LD
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione CSV del dataset Linked Open Data del vocabolario
+          controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in CSV of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/CSV
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione CSV per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': CSV distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.csv
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_CSV
+    - '@type': http://dati.gov.it/onto/dcatapit#Distribution
+      dct:description:
+      - '@language': it
+        '@value': Questa è la distribuzione XLSX del dataset Linked Open Data del
+          vocabolario controllato sulla classificazione a stelle delle strutture ricettive
+      - '@language': en
+        '@value': This is the distribution in XLSX of the Linked Open Dataset of the
+          controlled vocabulary related to the stars rating for accommodation facilities
+      dct:format:
+        url: http://publications.europa.eu/resource/authority/file-type/XLSX
+      dct:license:
+        url: https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40
+      dct:title:
+      - '@language': it
+        '@value': 'Distribuzione XLSX per classificazione a stelle strutture ricettive '
+      - '@language': en
+        '@value': XLSX distribution for accommodation facilities stars rating
+      http://www.w3.org/ns/dcat#accessURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating
+      http://www.w3.org/ns/dcat#downloadURL:
+        url: https://github.com/italia/dati-semantic-assets/tree/master/VocabolariControllati/classifications-for-accommodation-facilities/accommodation-star-rating/accommodation-star-rating.xlsx
+      url: http://dati.gov.it/data/resource/Distribution/AccoStarRating_XLSX
+    http://www.w3.org/ns/dcat#keyword:
+    - '@language': it
+      '@value': Struttura ricettiva
+    - '@language': it
+      '@value': Stelle
+    - '@language': it
+      '@value': Categoria struttura ricettiva
+    - '@language': en
+      '@value': Accommodation Facility
+    - '@language': en
+      '@value': Star rating
+    - '@language': en
+      '@value': Accommodation Facility Category
+    http://www.w3.org/ns/dcat#theme:
+      url: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    https://w3id.org/italia/onto/NDC/keyConcept: accommodation-star-rating
+    id: agid:D.3
+    skos:hasTopConcept:
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '0'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 0 stelle
+      - '@language': en
+        '@value': 0 star
+      id: '0'
+      label_en: 0 star
+      notation: '0'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 0 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/0
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '1'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 1 stella
+      - '@language': en
+        '@value': 1 star
+      id: '1'
+      label_en: 1 star
+      notation: '1'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 1 stella
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/1
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '2'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 2 stelle
+      - '@language': en
+        '@value': 2 star
+      id: '2'
+      label_en: 2 star
+      notation: '2'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 2 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/2
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '3'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle
+      - '@language': en
+        '@value': 3 star
+      id: '3'
+      label_en: 3 star
+      notation: '3'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 3S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 3 stelle superior
+      - '@language': en
+        '@value': 3 star superior
+      id: 3S
+      label_en: 3 star superior
+      notation: 3S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 3 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/3S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '4'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle
+      - '@language': en
+        '@value': 4 star
+      id: '4'
+      label_en: 4 star
+      notation: '4'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: 4S
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 4 stelle superior
+      - '@language': en
+        '@value': 4 star superior
+      id: 4S
+      label_en: 4 star superior
+      notation: 4S
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 4 stelle superior
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/4S
+    - '@type':
+      - skos:Concept
+      - accoapit:AccommodationStarRating
+      accoapit:accoStarRatingID: '5'
+      accoapit:accoStarRatingLabel:
+      - '@language': it
+        '@value': 5 stelle
+      - '@language': en
+        '@value': 5 star
+      id: '5'
+      label_en: 5 star
+      notation: '5'
+      rank: '1'
+      scheme: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+      skos:prefLabel:
+        '@language': it
+        '@value': 5 stelle
+      url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5
+    - url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+    url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating
+  url: https://w3id.org/italia/controlled-vocabulary/classifications-for-accommodation-facilities/accommodation-star-rating/5L
+statistics:
+  filtered:
+  - AccoStarRating_CSV
+  - AccoStarRating_JSON_LD
+  - AccoStarRating_RDF_Turtle
+  - AccoStarRating_RDF_XML
+  - AccoStarRating_XLSX
+  - AccommodationStarRating
+  - Agent
+  - SKOS
+  - Standard
+  - accoStarRatingID
+  - accoStarRatingLabel
+  - accommodation-star-rating
+  - accrualPeriodicity
+  - adms#representationTechnique
+  - agid
+  - conformsTo
+  - core#Concept
+  - core#ConceptScheme
+  - core#broader
+  - core#broaderTransitive
+  - core#definition
+  - core#inScheme
+  - core#narrower
+  - core#narrowerTransitive
+  - core#notation
+  - core#prefLabel
+  - creator
+  - dcat#accessURL
+  - dcat#contactPoint
+  - dcat#distribution
+  - dcat#downloadURL
+  - dcat#keyword
+  - dcat#theme
+  - dcatapit#Agent
+  - dcatapit#Dataset
+  - dcatapit#Distribution
+  - dcatapit#Organization
+  - dcatapit#Standard
+  - description
+  - format
+  - hasRankOrder
+  - identifier
+  - issued
+  - keyConcept
+  - language
+  - license
+  - modified
+  - name
+  - ns#Kind
+  - ns#Organization
+  - ns#fn
+  - ns#hasEmail
+  - owl#versionInfo
+  - publisher
+  - rightsHolder
+  - subject
+  - td_PCM
+  - title
+  - type
+  - voc_AgID
+  - xkos#numberOfLevels
+  framed_items: 9
+  source_items: 70
